@@ -1,5 +1,4 @@
 class Solution {
-    // Function to find equilibrium point in the array.
     public static int findEquilibrium(int arr[]) {
         // code here
            int n = arr.length;
@@ -10,15 +9,15 @@ class Solution {
 
         int leftSum = 0;
         for (int i = 0; i < n; i++) {
-            totalSum -= arr[i]; // totalSum now acts as rightSum
+            totalSum -= arr[i]; 
 
             if (leftSum == totalSum)
-                return i; // 0-based index as asked
+                return i;
 
             leftSum += arr[i];
         }
 
-        return -1; // no equilibrium found
+        return -1; 
         
     }
 }
