@@ -1,3 +1,4 @@
+// using Ascii values
 class Solution {
     public int maxFrequencyElements(int[] nums) {
           int[] freq = new int[101]; 
